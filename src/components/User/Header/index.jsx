@@ -10,7 +10,7 @@ import {
   CloseOutlined,
   LoginOutlined,
 } from "@ant-design/icons";
-import Logo from "../../../assets/logo/logo2.png";
+import Logo from "../../../assets/logo/logo1.png";
 import {
   getCartListAction,
   getCategoryListAction,
