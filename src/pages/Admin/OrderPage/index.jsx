@@ -15,7 +15,7 @@ import {
   getOrderListAction,
   reviewOrderAction,
 } from "../../../redux/actions";
-import { formatAddress } from "../../../utils/helper";
+
 import "./styles.scss";
 
 function OrderPage() {

@@ -52,7 +52,7 @@ function* getProductItemSaga(action) {
 function* deleteProductItemSaga(action) {
   const params = action.payload;
   try {
-    const result = yield productApi.deleteProductItem(params);
+    // const result = yield productApi.deleteProductItem(params);
     yield put({
       type: deleteItemCase.sucess,
       payload: {

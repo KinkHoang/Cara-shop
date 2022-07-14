@@ -25,7 +25,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateUserAction } from "../../../redux/actions";
 import { getOrderListAction } from "../../../redux/actions";
 import { useEffect } from "react";
-import { formatAddress, convertStatusNumber } from "../../../utils/helper";
+import { convertStatusNumber } from "../../../utils/helper";
 import "./styles.scss";
 
 function ProfilePage() {

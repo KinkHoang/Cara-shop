@@ -111,7 +111,7 @@ function ProductDetailPage({ match }) {
         return (
           <div className="product-detail__comment--item">
             <Comment
-              author={<a>{item.userName}</a>}
+              author={<a href ="!#">{item.userName}</a>}
               avatar={
                 <Avatar
                   src="https://joeschmoe.io/api/v1/random"
@@ -179,12 +179,14 @@ function ProductDetailPage({ match }) {
         <Col span={12}>
           <Row justify="center" className="product-detail__slider">
             <img
+              alt = "nah image1"
               src={images[imgShow]}
               className="product-detail__slider--show"
             />
             {images.map((item, index) => {
               return (
                 <img
+                  alt = "nah image2"
                   className="product-detail__slider--item"
                   src={item}
                   key={index}

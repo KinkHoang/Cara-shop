@@ -10,8 +10,8 @@ function ThanksPage() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getCartListAction({}));
-  }, []);
+    dispatch(getCartListAction({}));  },);
+  // }, []);
 
   return (
     <main className="thanks-page">

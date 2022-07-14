@@ -1,5 +1,5 @@
 import TitlePage from "../../../components/User/TitlePage";
-import { Row, Col, Input, Form, Button, Select, notification } from "antd";
+import { Row, Col, Input, Form, Button,  notification } from "antd";
 import { useState, useEffect } from "react";
 import { REGEX } from "../../../constants/validate";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,15 +14,15 @@ function ProductOrderPage() {
   const dispatch = useDispatch();
   const { TextArea } = Input;
 
-  const [values, setValues] = useState({
+  const [values,] = useState({
     city: "",
     district: "",
     wards: "",
   });
 
-  const [countries, setCountries] = useState([]);
-  const [districtss, setDistrict] = useState([]);
-  const [wards, setWards] = useState([]);
+  const [ setCountries] = useState([]);
+  const [ setDistrict] = useState([]);
+  const [ setWards] = useState([]);
 
   const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
@@ -84,35 +84,35 @@ function ProductOrderPage() {
     history.push(PATH.THANKS);
   };
 
-  function renderCity() {
-    return countries.map((item, index) => {
-      return (
-        <Select.Option key={index} value={item.code + "/" + item.name}>
-          {item.name}
-        </Select.Option>
-      );
-    });
-  }
+  // function renderCity() {
+  //   return countries.map((item, index) => {
+  //     return (
+  //       <Select.Option key={index} value={item.code + "/" + item.name}>
+  //         {item.name}
+  //       </Select.Option>
+  //     );
+  //   });
+  // }
 
-  function renderDistrict() {
-    return districtss.map((item, index) => {
-      return (
-        <Select.Option key={index} value={item.code + "/" + item.name}>
-          {item.name}
-        </Select.Option>
-      );
-    });
-  }
+  // function renderDistrict() {
+  //   return districtss.map((item, index) => {
+  //     return (
+  //       <Select.Option key={index} value={item.code + "/" + item.name}>
+  //         {item.name}
+  //       </Select.Option>
+  //     );
+  //   });
+  // }
 
-  function renderWard() {
-    return wards.map((item, index) => {
-      return (
-        <Select.Option key={index} value={item.code + "/" + item.name}>
-          {item.name}
-        </Select.Option>
-      );
-    });
-  }
+  // function renderWard() {
+  //   return wards.map((item, index) => {
+  //     return (
+  //       <Select.Option key={index} value={item.code + "/" + item.name}>
+  //         {item.name}
+  //       </Select.Option>
+  //     );
+  //   });
+  // }
 
   function renderProductCart() {
     return cartList.data.map((item, index) => {

@@ -25,7 +25,7 @@ function SidebarAdmin() {
         >
           <Row justify="center" onClick={() => history.push(PATH.ADMIN)}>
             <div className="sidebar__logo">
-              <img src={logo} />
+              <img alt = "wut-image1" src={logo} />
             </div>
           </Row>
           <Menu theme="" mode="inline" defaultSelectedKeys={["1"]}>

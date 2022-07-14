@@ -66,7 +66,7 @@ function ProductPage() {
       dataIndex: "imgs",
       key: "imgs",
       render: (_, record) => {
-        return <img src={record.imgs[0]} className="product-page__img" />;
+        return <img alt = "weird image1"src={record.imgs[0]} className="product-page__img" />;
       },
     },
     {
