@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { getBannerListAction } from "../../../redux/actions";
 import "./styles.scss";
 import sample from '../../../assets/images/cabinet2.mp4';
+import Video from 'react-responsive-video'
 
 
 function BannerSilder() {
@@ -15,9 +16,9 @@ function BannerSilder() {
 
   return (
     <div className="banner-slider">
-      <video className='videoTag' autoPlay loop muted>
-        <source src={sample} type='video/mp4' />
-      </video>
+      <Video mp4={sample} className='videoTag' autoPlay loop muted/>
+        {/* <source src={sample} type='video/mp4' />
+      </Video> */}
     </div>
   );
 

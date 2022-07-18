@@ -4,13 +4,12 @@ import { Row, Input, Menu, Dropdown } from "antd";
 import history from "../../../utils/history";
 import {
   SearchOutlined,
-  HeartOutlined,
   ShoppingCartOutlined,
   UserOutlined,
   CloseOutlined,
   LoginOutlined,
 } from "@ant-design/icons";
-import Logo from "../../../assets/logo/logo1.png";
+import Logo from "../../../assets/logo/logo3.png";
 import {
   getCartListAction,
   getCategoryListAction,
@@ -108,10 +107,10 @@ function Header() {
                 <SearchOutlined onClick={() => setIsShowInput(!isShowInput)} />
               )}
             </li>
-            <li className="toolbox__item">
+            {/* <li className="toolbox__item">
               <HeartOutlined />
               <span className="toolbox__item--number">1</span>
-            </li>
+            </li> */}
             <li className="toolbox__item" onClick={() => handleHeaderCart()}>
               <ShoppingCartOutlined />
               <span className="toolbox__item--number">{lengthCart}</span>

@@ -41,13 +41,13 @@ function HomePage() {
       <BannerSilder />
       <section className="home__product">
         <Tabs defaultActiveKey="2" centered>
-          <TabPane tab="New" key="1">
+          <TabPane  key="1">
             <Row gutter={16}>{renderProductList()}</Row>
           </TabPane>
-          <TabPane tab="Popular" key="2">
+          <TabPane  key="2">
             <Row gutter={16}>{renderProductList()}</Row>
           </TabPane>
-          <TabPane tab="Sale" key="3">
+          <TabPane  key="3">
             <Row gutter={16}>{renderProductList()}</Row>
           </TabPane>
         </Tabs>
