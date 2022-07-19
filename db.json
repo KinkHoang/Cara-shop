@@ -46,6 +46,13 @@
       "birthDay": "06/07/2022",
       "phone": "",
       "nickName": ""
+    },
+    {
+      "email": "nana@gmail.com",
+      "password": "$2a$10$lQwjXUaP5xnvj0q5IVry2uGwHihnJWCl8RGbRYX0PkI1Zt/eCE24a",
+      "fullName": "na na",
+      "role": "user",
+      "id": 6
     }
   ],
   "orders": [
@@ -76,7 +83,7 @@
           "imgs": [
             "https://baya.vn/media/catalog/product/cache/26ca5c7013acde829a5e76d2852b1d14/2/0/2001005.jpg"
           ],
-          "price": 193.24,
+          "price": 193,
           "alt": "noi-that",
           "amount": 1,
           "color": {},
@@ -86,7 +93,7 @@
           "id": 2,
           "name": "SPRING MATTRESS PATER-NOSTER",
           "imgs": [
-            "https://scontent.fhan3-5.fna.fbcdn.net/v/t39.30808-6/290321455_376265424605765_2817043999111567795_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=a86I15x68OwAX8MMArf&_nc_ht=scontent.fhan3-5.fna&oh=00_AT8NHv4ZHSXRU8FqejolJC6pEoO7cm_CuWqRz2_FoLBOyQ&oe=62C98459"
+            "https://i.upanh.org/2022/07/12/290321455_376265424605765_2817043999111567795_n.jpg"
           ],
           "price": 82,
           "alt": "noi-that",
@@ -186,7 +193,7 @@
           "imgs": [
             "https://baya.vn/media/catalog/product/cache/26ca5c7013acde829a5e76d2852b1d14/2/0/2001005.jpg"
           ],
-          "price": 193.24,
+          "price": 193,
           "alt": "noi-that",
           "amount": 1,
           "color": {},
@@ -198,6 +205,58 @@
       "time": "14:47",
       "status": 1,
       "id": 3
+    },
+    {
+      "userInfo": {
+        "name": "hoang",
+        "phone": "0356990500",
+        "email": "hoang@gmail.com",
+        "address": "da nang, lien chieu"
+      },
+      "userId": 4,
+      "cartList": [
+        {
+          "id": 2,
+          "name": "SPRING MATTRESS PATER-NOSTER",
+          "imgs": [
+            "https://i.upanh.org/2022/07/12/290321455_376265424605765_2817043999111567795_n.jpg"
+          ],
+          "price": 182,
+          "alt": "noi-that",
+          "amount": 1,
+          "color": {},
+          "size": {}
+        },
+        {
+          "id": 3,
+          "name": "TV BENCH ICONICO SKU 2001005",
+          "imgs": [
+            "https://baya.vn/media/catalog/product/cache/26ca5c7013acde829a5e76d2852b1d14/2/0/2001005.jpg"
+          ],
+          "price": 193,
+          "alt": "noi-that",
+          "amount": 1,
+          "color": {},
+          "size": {}
+        },
+        {
+          "id": 4,
+          "name": "TV BENCH ICONICO SKU 2001004",
+          "imgs": [
+            "https://baya.vn/media/catalog/product/cache/26ca5c7013acde829a5e76d2852b1d14/2/0/2001004.jpg"
+          ],
+          "price": 300,
+          "alt": "noi-that",
+          "amount": 1,
+          "color": {},
+          "size": {}
+        }
+      ],
+      "totalPrice": "675",
+      "date": "15/07/2022",
+      "time": "14:19",
+      "status": 1,
+      "id": 4
     }
   ],
   "comments": [
@@ -479,10 +538,10 @@
       "categoryId": 2,
       "discount": 15,
       "isNew": false,
-      "price": 82,
+      "price": 182,
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "imgs": [
-        "https://scontent.fhan3-5.fna.fbcdn.net/v/t39.30808-6/290321455_376265424605765_2817043999111567795_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=a86I15x68OwAX8MMArf&_nc_ht=scontent.fhan3-5.fna&oh=00_AT8NHv4ZHSXRU8FqejolJC6pEoO7cm_CuWqRz2_FoLBOyQ&oe=62C98459"
+        "https://i.upanh.org/2022/07/12/290321455_376265424605765_2817043999111567795_n.jpg"
       ],
       "rate": 3,
       "alt": "noi-that"
@@ -494,7 +553,7 @@
       "categoryId": 1,
       "discount": 5,
       "isNew": true,
-      "price": 193.24,
+      "price": 193,
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "imgs": [
         "https://baya.vn/media/catalog/product/cache/26ca5c7013acde829a5e76d2852b1d14/2/0/2001005.jpg"
@@ -539,7 +598,7 @@
       "categoryId": 1,
       "discount": 15,
       "isNew": true,
-      "price": 22,
+      "price": 122,
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "imgs": [
         "https://baya.vn/media/catalog/product/cache/26ca5c7013acde829a5e76d2852b1d14/k/o/kondo_stool_with_storage_baya_2000538.jpg"
@@ -722,7 +781,7 @@
       "price": 450,
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "imgs": [
-        "https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/292200814_376269651272009_1272269024886012098_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=MqbB4lP1soUAX9NfVZl&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-F7byavFAplpBAiR3cvCuNal-gjPWIQC5q9VX_aIG6cw&oe=62C9AE4C"
+        "https://i.upanh.org/2022/07/12/292200814_376269651272009_1272269024886012098_n.jpg"
       ],
       "rate": 5,
       "alt": "noi-that"
