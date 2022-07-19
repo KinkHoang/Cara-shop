@@ -37,7 +37,7 @@ function Footer() {
     <footer className="footer">
       <section className="footer__content container-1">
         <ul className="content__list">{renderFooterContent()}</ul>
-        <ul className="social_list">{renderSocialList()}</ul>
+        <a href="https://croconaw.netlify.app/" className="social_list">{renderSocialList()}</a>
       </section>
       <section className = 'footer__contact container-1'>
         <p className = 'contact__text'>

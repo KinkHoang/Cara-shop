@@ -13,7 +13,7 @@ import {
   Comment,
   Avatar,
 } from "antd";
-import { HeartOutlined } from "@ant-design/icons";
+
 import {
   getProductItem,
   getProductListAction,
@@ -280,7 +280,7 @@ function ProductDetailPage({ match }) {
               />
               <Button
                 type="primary"
-                icon={<HeartOutlined />}
+                // icon={<HeartOutlined />}
                 size="large"
               ></Button>
             </Row>

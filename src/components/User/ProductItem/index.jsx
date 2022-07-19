@@ -22,9 +22,9 @@ function ProductItem(props) {
         )}
         {isNew ? <div className="product-item__img--new"> New </div> : ""}
         <ul className="product-item__toolbox">
-          <li>
+          {/* <li>
             <HeartOutlined />
-          </li>
+          </li> */}
           <BtnAddToCart product={{ ...props.product }} />
           <li onClick={() => history.push(`/product-detail/${id}`)}>
             <SearchOutlined />
