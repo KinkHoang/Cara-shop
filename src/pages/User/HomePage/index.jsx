@@ -49,7 +49,6 @@ function HomePage() {
 
         </Tabs>
       </section>
-
         
         <header className="header parallax-image flex-row flex-align-center flex-justify-center">
 			<section className="hero-content flex-col flex-justify-center flex-align-start py-5 px-3">
