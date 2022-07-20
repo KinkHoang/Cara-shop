@@ -26,11 +26,11 @@ function BtnAddToCart(props) {
         })
       );
       notification.success({
-        message: "Cart update successful!",
+        message: "Cập nhật giỏ hàng thành công!",
       });
     } else {
       notification.warning({
-        message: "Sign in to add to cart!",
+        message: "Đăng nhập để thêm vào giỏ hàng!",
       });
       history.push("/login");
     }
@@ -45,7 +45,7 @@ function BtnAddToCart(props) {
           icon={<ShoppingCartOutlined />}
           onClick={() => handleAddToCart()}
         >
-          Add to cart
+          Thêm vào giỏ hàng
         </Button>
       ) : (
         <li onClick={() => handleAddToCart()}>

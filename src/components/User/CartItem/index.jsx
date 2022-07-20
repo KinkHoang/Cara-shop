@@ -49,7 +49,7 @@ function CartItem(props) {
                 onConfirm={() => {
                   handleDeleteCart(cartIndex);
                 }}
-                title="Do you agree to remove this product from the order?"
+                title="Bạn thực sự muốn xóa sản phẩm này khỏi giỏ hàng?"
               >
                 <DeleteOutlined />
               </Popconfirm>

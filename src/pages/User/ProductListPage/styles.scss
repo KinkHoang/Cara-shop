@@ -67,6 +67,10 @@
   background-color: rgba($text-gray, 0.2) !important;
 }
 
-.sidebar__all.active {
+.sidebar__all:active {
   text-decoration: underline;
+}
+
+.sidebar__all:hover {
+  cursor: pointer;
 }

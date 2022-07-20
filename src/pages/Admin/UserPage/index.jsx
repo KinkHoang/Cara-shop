@@ -64,7 +64,7 @@ function UserPage() {
       key: "action",
       render: (_, record) => {
         if (record.id === userInfo.id) {
-          return <p className="mx-2">My account</p>;
+          return <p className="mx-2">Tài khoản của tôi</p>;
         } else {
           return (
             <Row justify="space-between">
@@ -145,12 +145,12 @@ function UserPage() {
           </Form.Item>
         </Form>
       </Modal>
-      <p className="user-page__title">User management</p>
+      <p className="user-page__title">Quản lý User</p>
       <div className="user-page__main">
         <Row justify="space-between" className="user-page__main--top">
           <div></div>
           <Search
-            placeholder="input search text"
+            placeholder="Tìm kiếm"
             allowClear
             className="user-page__main--search"
             enterButton="Search"
@@ -162,7 +162,7 @@ function UserPage() {
             className="user-page__main--select"
             onChange={(value) => handleSelect(value)}
           >
-            <Option value="">All</Option>
+            <Option value="">Tất cả</Option>
             <Option value="admin">Admin</Option>
             <Option value="user">User</Option>
           </Select>

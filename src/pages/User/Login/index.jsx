@@ -26,7 +26,7 @@ function LoginPage() {
             }}
             onFinish={onFinish}
           >
-            <p className="login-title">Great to have you back!</p>
+            <p className="login-title">Chào mừng bạn trở lại!</p>
             <Form.Item
               name="email"
               rules={[
@@ -62,11 +62,11 @@ function LoginPage() {
             </Form.Item>
             <Form.Item>
               <Form.Item valuePropName="checked" noStyle>
-                <Checkbox>Remember me</Checkbox>
+                <Checkbox>Nhớ tôi</Checkbox>
               </Form.Item>
 
               <Link className="login-form-forgot" to="">
-                Forgot password
+                Quên mật khẩu
               </Link>
             </Form.Item>
 
@@ -78,12 +78,12 @@ function LoginPage() {
                   className="login-form-button my-1"
                   size="large"
                 >
-                  Log in
+                  Đăng Nhập
                 </Button>
               </Row>
               Or{" "}
               <Link to="/register" className="login-form-register">
-                Register now!
+                Đăng ký ngay!
               </Link>
             </Form.Item>
           </Form>

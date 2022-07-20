@@ -148,18 +148,18 @@ function ProductListPage({ match }) {
               setSubCategorySelected(null);
             }}
           >
-            All
+            Tất cả sản phẩm
           </p>
           <div className="sidebar__category">
-            <p>Categories</p>
+            <p>Hạng mục</p>
             <ul className="sidebar__category--list">{renderSubCategory()}</ul>
           </div>
           <div className="sider__price">
-            <p>Prices</p>
+            <p>Giá</p>
             <ul className="sidebar__price--list">{renderPriceFilter()}</ul>
           </div>
           <div className="sider__rate">
-            <p>Rates</p>
+            <p>Đánh giá sản phẩm</p>
             <ul className="sidebar__price--list">{renderRateFilter()}</ul>
           </div>
         </Col>
@@ -171,7 +171,7 @@ function ProductListPage({ match }) {
               } results found in 4ms`}
             </h4>
             <div>
-              <label htmlFor="sort">Sort by </label>
+              <label htmlFor="sort">Sắp xếp theo </label>
               <select
                 name="sort"
                 id="sort"
@@ -179,9 +179,9 @@ function ProductListPage({ match }) {
                   handleSortBy(e);
                 }}
               >
-                <option defaultValue>Featured</option>
-                <option value="asc">Price asc</option>
-                <option value="desc">Price desc</option>
+                <option defaultValue>Thể loại</option>
+                <option value="asc">Giá tăng dần</option>
+                <option value="desc">Giá giảm dần</option>
               </select>
             </div>
           </Row>
@@ -197,7 +197,7 @@ function ProductListPage({ match }) {
               }}
             />
             {productList.data.length <= 0 ? (
-              <h2>Sorry, no products were found to match your selection</h2>
+              <h2>Không tìm thấy sản phẩm nào phù hợp với lựa chọn của bạn</h2>
             ) : (
               ""
             )}

@@ -150,7 +150,6 @@ function ProductPage() {
           ...values,
           imgs: newImages,
           subCategoryId: 1,
-          discount: 10,
           isNew: false,
           alt: "product",
           rate: 5,
@@ -181,15 +180,15 @@ function ProductPage() {
         >
           <Form.Item
             name="name"
-            label="Name"
-            rules={[{ required: true, message: "Please input name!" }]}
+            label="Tên sản phẩm"
+            rules={[{ required: true, message: "Xin hãy nhập tên!" }]}
           >
             <Input />
           </Form.Item>
           <Form.Item
             name="categoryId"
-            label="Category"
-            rules={[{ required: true, message: "Please select category!" }]}
+            label="Hạng Mục"
+            rules={[{ required: true, message: "Xin hãy chọn hạng mục!" }]}
           >
             <Select>
               {categoryList.data.map((item) => (
@@ -200,18 +199,18 @@ function ProductPage() {
             </Select>
           </Form.Item>
           <Form.Item
-            label="Cost"
+            label="Giá"
             name="price"
-            rules={[{ required: true, message: "Please input cost!" }]}
+            rules={[{ required: true, message: "Xin hãy nhập giá!" }]}
           >
             <InputNumber min={1} />
           </Form.Item>
-          <Form.Item label="Description" name="description">
+          <Form.Item label="Mô tả sản phẩm" name="description">
             <TextArea rows={6} />
           </Form.Item>
           <Form.Item
             valuePropName="fileList"
-            label="Images"
+            label="Ảnh"
             name="imgs"
             getValueFromEvent={(e) => {
               if (Array.isArray(e)) return e;
@@ -219,12 +218,12 @@ function ProductPage() {
             }}
             validateFirst
             rules={[
-              { required: true, message: "Please upload photos!" },
+              { required: true, message: "Chưa tải ảnh!" },
               () => ({
                 validator(_, value) {
                   if (!["image/png", "image/jpeg"].includes(value[0].type)) {
                     return Promise.reject(
-                      "The file is not in the correct format"
+                      "Sai định dạng ảnh"
                     );
                   }
                   return Promise.resolve();
@@ -233,7 +232,7 @@ function ProductPage() {
             ]}
           >
             <Upload listType="picture" beforeUpload={() => false}>
-              <Button icon={<UploadOutlined />}>Click to upload</Button>
+              <Button icon={<UploadOutlined />}>Tải lên</Button>
             </Upload>
           </Form.Item>
           <Form.Item>
@@ -245,7 +244,7 @@ function ProductPage() {
           </Form.Item>
         </Form>
       </Drawer>
-      <p className="product-page__title">Product management</p>
+      <p className="product-page__title">Quản lý sản phẩm</p>
       <div className="product-page__main">
         <Row justify="space-between" className="product-page__main--top">
           <Button
@@ -255,10 +254,10 @@ function ProductPage() {
               setVisible(true);
             }}
           >
-            Add Product
+            Thêm sản phẩm
           </Button>
           <Search
-            placeholder="input search text"
+            placeholder="Tìm sản phẩm..."
             allowClear
             className="user-page__main--search"
             enterButton="Search"
@@ -270,7 +269,7 @@ function ProductPage() {
             className="product-page__main--select"
             onChange={(value) => handleSelect(value)}
           >
-            <Select.Option value="">All</Select.Option>
+            <Select.Option value="">Tất cả</Select.Option>
             {categoryList.data.map((item) => (
               <Select.Option value={item.id} key={item.id}>
                 {item.name}

@@ -80,7 +80,7 @@ function OrderPage() {
                   dispatch(reviewOrderAction({ ...record, status: 2 }))
                 }
               >
-                Confirm
+                Xác nhận
               </Button>
               <Popconfirm
                 title={`Are you sure you want to cancel this order?`}
@@ -90,20 +90,20 @@ function OrderPage() {
                   dispatch(reviewOrderAction({ ...record, status: 3 }))
                 }
               >
-                <Button danger>Cancel</Button>
+                <Button danger>Hủy</Button>
               </Popconfirm>
             </Space>
           );
         } else if (record.status === 2) {
           return (
             <p className="order-page__status--comfirm order-page__status">
-              Order comfirmed
+              Đơn hàng đã xác nhận
             </p>
           );
         } else {
           return (
             <p className="order-page__status--canncel order-page__status">
-              Order canceled
+              Đơn hàng đã hủy
             </p>
           );
         }
@@ -136,11 +136,11 @@ function OrderPage() {
 
   return (
     <main className="order-page">
-      <p className="order-page--title">Order Management</p>
+      <p className="order-page--title">Quản lý đơn hàng</p>
       <Row justify="space-between" className="order-page__main">
         <div></div>
         <Search
-          placeholder="input search text"
+          placeholder="Tìm kiếm"
           allowClear
           className="order-page__main--search"
           enterButton="Search"
@@ -152,10 +152,10 @@ function OrderPage() {
           className="order-page__main--select"
           onChange={(value) => handleSelect(value)}
         >
-          <Option value="">All</Option>
-          <Option value={1}>Order Waiting</Option>
-          <Option value={2}>Order comfirmed</Option>
-          <Option value={3}>Order canceled</Option>
+          <Option value="">Tất cả đơn hàng</Option>
+          <Option value={1}>Đơn hàng đang chờ</Option>
+          <Option value={2}>Đơn hàng đã xác nhận</Option>
+          <Option value={3}>Đơn hàng đã hủy</Option>
         </Select>
       </Row>
       <Table
@@ -177,7 +177,7 @@ function OrderPage() {
                         <img src={item.imgs[0]} alt="" />
                       </Col>
                       <Col span={8}>
-                        <p>Name : {item.name}</p>
+                        <p>Name: {item.name}</p>
                       </Col>
                       <Col span={5}>
                         <p>
@@ -188,11 +188,11 @@ function OrderPage() {
                         </p>
                       </Col>
                       <Col span={4}>
-                        <p>Amount: {item.amount}</p>
+                        <p>Số Lượng: {item.amount}</p>
                       </Col>
                       <Col span={4}>
                         <p>
-                          Price: $
+                          Giá: $
                           {(item.price +
                             (item.size.price ? item.size.price : 0) +
                             (item.color.price ? item.color.price : 0)) *

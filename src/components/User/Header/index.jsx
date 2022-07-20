@@ -66,17 +66,17 @@ function Header() {
   const menu = (
     <Menu>
       <Menu.Item key="1" onClick={() => history.push("/profile")}>
-        {`My account (${userInfo?.fullName})`}
+        {`Tải khoản của tôi (${userInfo?.fullName})`}
       </Menu.Item>
       {userInfo?.role === "admin" ? (
         <Menu.Item key="3" onClick={() => history.push("/admin")}>
-          Back to Admin page
+          Quay lại trang Admin
         </Menu.Item>
       ) : (
         ""
       )}
       <Menu.Item key="2" onClick={() => handleLogout()}>
-        Logout
+        Đăng xuất
       </Menu.Item>
     </Menu>
   );
@@ -91,7 +91,7 @@ function Header() {
             <Search
               className="header__search"
               size="large"
-              placeholder="Search product..."
+              placeholder="Nhập sản phẩm cần tìm..."
               onSearch={(value) => handleSearchProduct(value)}
               enterButton
             />

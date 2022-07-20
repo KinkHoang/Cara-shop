@@ -79,7 +79,7 @@ export default function authReducer(state = initialState, action) {
       localStorage.removeItem("userInfo");
       localStorage.removeItem("cartList");
       notification.success({
-        message: "Loggout in successfully!",
+        message: "Đăng xuất thành công!",
       });
       return {
         ...state,

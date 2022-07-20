@@ -175,7 +175,7 @@ function ProductOrderPage() {
             }}
             onFinish={onFinish}
           >
-            <p className="order-page__form--title">Billing Address</p>
+            <p className="order-page__form--title">Địa chỉ đơn hàng</p>
             <Form.Item
               name="name"
               label="Fullname"
@@ -245,16 +245,16 @@ function ProductOrderPage() {
             <Form.Item>
               <Row justify="center">
                 <Button type="primary" htmlType="submit" size="large">
-                  Place Order
+                  Nơi đặt hàng
                 </Button>
               </Row>
             </Form.Item>
           </Form>
         </Col>
         <Col span={10} className="order-page__list">
-          <h3>Cart Total</h3>
+          <h3>Đơn hàng</h3>
           {renderProductCart()}
-          <p className="order-page__list--total">Total: ${totalPrice()}</p>
+          <p className="order-page__list--total">Tổng cộng: ${totalPrice()}</p>
         </Col>
       </Row>
     </main>

@@ -32,10 +32,10 @@ function DashboardPage() {
   });
 
   const stateLine = {
-    labels: ["January", "February", "March", "April", "May"],
+    labels: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5"],
     datasets: [
       {
-        label: "Revenue",
+        label: "Doanh Thu",
         fill: true,
         lineTension: 0.5,
         backgroundColor: "rgba(75,192,192,1)",
@@ -47,7 +47,7 @@ function DashboardPage() {
   };
 
   const stateDoughnut = {
-    labels: ["Completed", "Awaiting confirmation", "Canceled"],
+    labels: ["Đã Hoàn Thành", "Chờ Xác Nhận", "Đã Hủy"],
     datasets: [
       {
         label: "Rainfall",
@@ -60,7 +60,7 @@ function DashboardPage() {
 
   return (
     <main className="dashboard-page">
-      <p className="dashboard-page__title">Dashboard</p>
+      <p className="dashboard-page__title">Thống Kê</p>
       <Row gutter={16}>
         <Col span={14} className="dashboard-page__chart">
           <Line
@@ -105,7 +105,7 @@ function DashboardPage() {
       >
         <Col span={4}>
           <Card
-            title="Total Revenue"
+            title="Tổng Doanh Thu"
             bordered={true}
             className="dashboard-page__statistical--item"
           >
@@ -114,16 +114,16 @@ function DashboardPage() {
         </Col>
         <Col span={4}>
           <Card
-            title="Total Users"
+            title="Khách Truy Cập"
             bordered={true}
             className="dashboard-page__statistical--item"
           >
-            5.345
+            54.345
           </Card>
         </Col>
         <Col span={4}>
           <Card
-            title="Today"
+            title="Hôm Nay"
             bordered={true}
             className="dashboard-page__statistical--item"
           >
@@ -132,11 +132,11 @@ function DashboardPage() {
         </Col>
         <Col span={4}>
           <Card
-            title="Daily Visitors"
+            title="Khách Định Kỳ"
             bordered={true}
             className="dashboard-page__statistical--item"
           >
-            41.857
+            4.857
           </Card>
         </Col>
       </Row>

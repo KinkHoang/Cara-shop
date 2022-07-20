@@ -36,7 +36,7 @@ function SidebarAdmin() {
                 history.push(PATH.HOMEADMIN);
               }}
             >
-              Dashboard
+              Thống Kê
             </Menu.Item>
             <Menu.Item
               key="2"
@@ -45,7 +45,7 @@ function SidebarAdmin() {
                 history.push(PATH.PRODUCTADMIN);
               }}
             >
-              Product Management
+              Quản Lý Sản Phẩm
             </Menu.Item>
             <Menu.Item
               key="3"
@@ -54,7 +54,7 @@ function SidebarAdmin() {
                 history.push(PATH.ORDERADMIN);
               }}
             >
-              Order Management
+              Quản Lý Đơn Hàng
             </Menu.Item>
             <Menu.Item
               key="4"
@@ -63,7 +63,7 @@ function SidebarAdmin() {
                 history.push(PATH.USERADMIN);
               }}
             >
-              User Management
+              Quản Lý User
             </Menu.Item>
             <Menu.Item
               key="7"
@@ -72,7 +72,7 @@ function SidebarAdmin() {
                 history.push(PATH.HOME);
               }}
             >
-              Back to user page
+              Quay Lại Trang Chủ
             </Menu.Item>
           </Menu>
         </Sider>

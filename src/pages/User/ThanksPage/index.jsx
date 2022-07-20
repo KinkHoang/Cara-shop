@@ -15,16 +15,16 @@ function ThanksPage() {
 
   return (
     <main className="thanks-page">
-      <TitlePage title="Thank you!" />
+      <TitlePage title="Xin Cảm Ơn!" />
       <div className="container-1">
         <div className="thanks-page__main">
           <p className="thanks-page__main--content">
-            Thank you for your purchase, the product will be delivered to you in
-            the next 3-5 days
+            Cảm ơn bạn đã mua hàng, sản phẩm sẽ được giao cho bạn trong
+            3-5 ngày tiếp theo
           </p>
           <Row justify="center">
             <Button onClick={() => history.push("/")} type="primary">
-              Go to Home page
+              Về Trang Chủ
             </Button>
           </Row>
         </div>

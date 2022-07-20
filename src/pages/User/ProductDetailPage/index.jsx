@@ -202,7 +202,7 @@ function ProductDetailPage({ match }) {
           <div className="main__content">
             <h1>{productDetail.data.name}</h1>
             <Rate disabled defaultValue={4} />
-            <span> (0 comments)</span>
+            <span> (0 Bình luận)</span>
             <p className="main__content--price">
               $
               {productDetail.data.price +
@@ -258,7 +258,7 @@ function ProductDetailPage({ match }) {
             </Row>
             <Row>
               <Col span={6}>
-                <p className="main__control--title">Quantity</p>
+                <p className="main__control--title">Số lượng</p>
               </Col>
               <InputNumber
                 defaultValue={1}
@@ -289,12 +289,12 @@ function ProductDetailPage({ match }) {
       </Row>
       <div className="product-detail__infor">
         <Tabs defaultActiveKey="1" centered>
-          <TabPane tab="Description" key="1">
+          <TabPane tab="Mô tả sản phẩm" key="1">
             <Row>
               <p className="infor__des">{productDetail.data.description}</p>
             </Row>
           </TabPane>
-          <TabPane tab="Additional Information" key="2">
+          <TabPane tab="Thông tin thêm" key="2">
             <Row justify="center" className="infor__option">
               <Col span={8}>
                 <Row justify="space-between">
@@ -316,7 +316,7 @@ function ProductDetailPage({ match }) {
               </Col>
             </Row>
           </TabPane>
-          <TabPane tab={`Comments (${commentList.data.length})`} key="3">
+          <TabPane tab={`(${commentList.data.length}) Bình luận`} key="3">
             <Row>
               <Col span={12}>
                 <Form

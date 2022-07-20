@@ -29,12 +29,12 @@ export const formatAddress = (string) => {
 export const convertStatusNumber = (number) => {
   switch (number) {
     case 1:
-      return "Waiting comfirm";
+      return "Chờ xác nhận";
     case 2:
-      return "Completed";
+      return "Hoàn Thành";
     case 3:
-      return "Canceled";
+      return "Đã Hủy";
     default:
-      return "Error";
+      return "Lỗi";
   }
 };

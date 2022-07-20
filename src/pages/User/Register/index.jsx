@@ -28,7 +28,7 @@ function RegisterPage() {
             onFinish={onFinish}
           >
             <p className="register-title">
-              If you don’t have an account, register now!
+              Nếu bạn không có tài khoản, đăng ký ngay!
             </p>
             <Form.Item
               name="email"
@@ -129,11 +129,11 @@ function RegisterPage() {
                   className="register-form-button my-1"
                   size="large"
                 >
-                  Register
+                  Đăng Ký
                 </Button>
               </Row>
               <Link to="/" className="register-form-home">
-                Go to home page
+                Về trang chủ
               </Link>
             </Form.Item>
           </Form>

@@ -58,7 +58,7 @@ function SearchPage() {
                 }`}
                 onClick={() => setParams({ _page: 1, _limit: 16 })}
               >
-                All
+                Tất cả
               </li>
               {categoryList.data.map((item) => (
                 <li

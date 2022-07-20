@@ -6,12 +6,12 @@ import {
 import logoPayment from '../../../assets/logo/pay.png';
 import "./styles.scss";
 const footerContents = [
-  "About us",
-  "store location",
-  "contact",
-  "support",
-  "policy",
-  "Faqs",
+  "Giới Thiệu",
+  "Đỉa Chỉ",
+  "Liên Hệ",
+  "Hỗ trợ khách hàng",
+  "Chính sách",
+  "Câu hỏi thường gặp",
 ];
 
 const socialIcons = [
@@ -37,11 +37,11 @@ function Footer() {
     <footer className="footer">
       <section className="footer__content container-1">
         <ul className="content__list">{renderFooterContent()}</ul>
-        <a href="https://croconaw.netlify.app/" className="social_list">{renderSocialList()}</a>
+        <a href = "https://www.facebook.com/Croconaw-Furniture-109134945196808/"><ul className="social_list">{renderSocialList()}</ul></a>
       </section>
       <section className = 'footer__contact container-1'>
         <p className = 'contact__text'>
-          © 2021 Croconaw. All Rights Reserved | <span>(+00) 123 567990</span> | contact@croconaw.com
+          © 2022 Croconaw. By Viet Hoang | <span>(+00) 123 567990</span> | contact@croconaw.com
         </p>
         <img src= {logoPayment} alt="logo-payment" />
       </section>

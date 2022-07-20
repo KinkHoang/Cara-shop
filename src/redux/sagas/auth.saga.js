@@ -16,13 +16,13 @@ function* registerSaga(action) {
       },
     });
     notification.success({
-      message: "Successful account registration!",
+      message: "Đăng ký tài khoản thành công!",
     });
     yield history.push(PATH.LOGIN);
   }
    catch (e) {
     notification.warning({
-      message: "Already email!",
+      message: "Email đã tồn tại!",
     }
     );
     yield put({
@@ -40,11 +40,11 @@ function* loginSaga(action) {
     const result = yield authApi.login(params);
     if (result.user.role === "disable") {
       notification.warning({
-        message: "This account has been locked!",
+        message: "Tải khoản này đã bị chặn!",
       });
     } else {
       notification.success({
-        message: "Login Successful!",
+        message: "Đăng nhập thành công!",
       });
       yield put({
         type: loginCase.sucess,
@@ -60,7 +60,7 @@ function* loginSaga(action) {
     }
   } catch (e) {
     notification.warning({
-      message: "Incorrect password or email!",
+      message: "Sai mật khẩu hoặc email!",
     });
     yield put({
       type: loginCase.fail,

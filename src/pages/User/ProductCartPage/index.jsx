@@ -51,7 +51,7 @@ function ProductCartPage() {
       <section className="cart-page__main">
         <div className="main__content">
           {cartList.totalCartList < 1 ? (
-            <p className="main__content--not-item">No items found in cart</p>
+            <p className="main__content--not-item">Không có sản phẩm nào trong giỏ hàng</p>
           ) : (
             cartList.data.map((item, index) => (
               <CartItem
@@ -66,7 +66,7 @@ function ProductCartPage() {
         </div>
         <div className="main__total">
           <div className="main__total--content">
-            <p>Total:</p>
+            <p>Tổng cộng:</p>
             <p>${totalPrice()}</p>
           </div>
           <Row justify="center">

@@ -153,7 +153,7 @@ function ProfilePage() {
               }}
               onFinish={onFinish}
             >
-              <p className="infor__form--title title">Personal information</p>
+              <p className="infor__form--title title">Thông tin cá nhân</p>
               <div className="infor__avatar">
                 <div className="infor__avatar--img">
                   <Row justify="center">
@@ -224,9 +224,9 @@ function ProfilePage() {
               </Form.Item>
               <Form.Item name="gender" label="Gender">
                 <Radio.Group>
-                  <Radio value="male">Male</Radio>
-                  <Radio value="female">Female</Radio>
-                  <Radio value="orther">Other</Radio>
+                  <Radio value="male">Giới tính Nam</Radio>
+                  <Radio value="female">Giới tính Nữ</Radio>
+                  <Radio value="orther">Khác</Radio>
                 </Radio.Group>
               </Form.Item>
               <Form.Item label="Birthday" name="birthDay">
@@ -244,7 +244,7 @@ function ProfilePage() {
                     className="my-1"
                     size="large"
                   >
-                    Save Change
+                    Lưu thay đổi
                   </Button>
                 </Form.Item>
               </Row>
@@ -254,7 +254,7 @@ function ProfilePage() {
             tab={
               <span>
                 <LockOutlined />
-                Change Password
+                Đổi mật khẩu
               </span>
             }
             key="2"
@@ -265,7 +265,7 @@ function ProfilePage() {
               wrapperCol={{ span: 20 }}
               onFinish={handleChangePassword}
             >
-              <p className="change-pass__form--title title ">Change Password</p>
+              <p className="change-pass__form--title title ">Đổi mật khẩu</p>
               <Form.Item
                 name="password"
                 label="Password"

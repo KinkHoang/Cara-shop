@@ -9,9 +9,9 @@ function NotFoundPage() {
         <Col span={12}>
           <div className="notfound-page__main">
             <p>Oops!</p>
-            <p>Page not found!</p>
+            <p>Không tìm thấy trang!</p>
             <Link to="/" className="notfound-page__main--link">
-              Go to Home page
+              Trở về trang chủ
             </Link>
           </div>
         </Col>
