@@ -179,7 +179,7 @@ function ProductListPage({ match }) {
                   handleSortBy(e);
                 }}
               >
-                <option defaultValue>Thể loại</option>
+                {/* <option defaultValue>Hạng mục</option> */}
                 <option value="asc">Giá tăng dần</option>
                 <option value="desc">Giá giảm dần</option>
               </select>

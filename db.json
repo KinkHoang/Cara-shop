@@ -348,19 +348,19 @@
       "subCategories": [
         {
           "id": 1,
-          "name": "TV & Media Furniture"
+          "name": "TV & Đồ Điện Tử"
         },
         {
           "id": 2,
-          "name": "Stools"
+          "name": "Đệm"
         },
         {
           "id": 3,
-          "name": "Artificial Flowers & Plants"
+          "name": "Bình Hoa Giả"
         },
         {
           "id": 4,
-          "name": "Floor Lamps"
+          "name": "Đèn Ngủ"
         }
       ]
     },
@@ -370,19 +370,19 @@
       "subCategories": [
         {
           "id": 1,
-          "name": "Mattress"
+          "name": "Nệm"
         },
         {
           "id": 2,
-          "name": "Bed Linen, Pillow & Duvet"
+          "name": "Ga, Gối, Chăn"
         },
         {
           "id": 3,
-          "name": "Wardrobe"
+          "name": "Tủ Quần Áo"
         },
         {
           "id": 4,
-          "name": "Mirror"
+          "name": "Gương"
         }
       ]
     },
@@ -392,19 +392,19 @@
       "subCategories": [
         {
           "id": 1,
-          "name": "Dining tables"
+          "name": "Bàn Ăn"
         },
         {
           "id": 2,
-          "name": "Dining chairs"
+          "name": "Ghế Ăn"
         },
         {
           "id": 3,
-          "name": "Sideboard"
+          "name": "Kệ Treo Tường"
         },
         {
           "id": 4,
-          "name": "Plates, Bowls & Cutlery"
+          "name": "Đĩa, Chén"
         }
       ]
     },
@@ -414,15 +414,15 @@
       "subCategories": [
         {
           "id": 1,
-          "name": "Towels"
+          "name": "Khăm Tắm"
         },
         {
           "id": 2,
-          "name": "Bathroom Mats"
+          "name": "Thảm Phòng Tắm"
         },
         {
           "id": 3,
-          "name": "Bathroom Accessories"
+          "name": "Phụ kiện Phòng Tắm"
         }
       ]
     }
