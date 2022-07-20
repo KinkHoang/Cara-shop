@@ -62,7 +62,7 @@ function LoginPage() {
             </Form.Item>
             <Form.Item>
               <Form.Item valuePropName="checked" noStyle>
-                <Checkbox>Nhớ tôi</Checkbox>
+                <Checkbox>Nhớ tài khoản</Checkbox>
               </Form.Item>
 
               <Link className="login-form-forgot" to="">
@@ -81,7 +81,7 @@ function LoginPage() {
                   Đăng Nhập
                 </Button>
               </Row>
-              Or{" "}
+              Hoặc{" "}
               <Link to="/register" className="login-form-register">
                 Đăng ký ngay!
               </Link>
