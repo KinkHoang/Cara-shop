@@ -11,7 +11,7 @@ import BannerSilder from "../../../components/User/BannerSlider";
 import { ArrowRightAltSharp } from "@mui/icons-material";
 import "./styles.scss";
 import "./header.css";
-const tagList = ["sofa", "sale", "hot"];
+
 
 function HomePage() {
   const { TabPane } = Tabs;
@@ -74,11 +74,7 @@ function HomePage() {
 				</h6>
         
 			</section>
-      <ul className="home__sale--tag">
-          {tagList.map((item, index) => (
-            <li key={index}>{`#${item}`}</li>
-          ))}
-        </ul>
+      
 		</header>
 
     </main>
