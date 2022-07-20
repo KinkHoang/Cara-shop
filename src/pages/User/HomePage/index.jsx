@@ -46,12 +46,7 @@ function HomePage() {
           <TabPane  key="1">
             <Row gutter={16}>{renderProductList()}</Row>
           </TabPane>
-          <TabPane  key="2">
-            <Row gutter={16}>{renderProductList()}</Row>
-          </TabPane>
-          <TabPane  key="3">
-            <Row gutter={16}>{renderProductList()}</Row>
-          </TabPane>
+
         </Tabs>
       </section>
 
