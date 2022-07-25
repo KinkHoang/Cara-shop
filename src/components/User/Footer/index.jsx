@@ -41,7 +41,7 @@ function Footer() {
       </section>
       <section className = 'footer__contact container-1'>
         <p className = 'contact__text'>
-          © 2022 Croconaw. By Viet Hoang | <span>(+00) 123 567990</span> | contact@croconaw.com
+          © 2022 Cara. By Viet Hoang | <span>(+00) 123 567990</span> | contact@cara.com
         </p>
         <img src= {logoPayment} alt="logo-payment" />
       </section>

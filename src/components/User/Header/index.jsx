@@ -9,7 +9,7 @@ import {
   CloseOutlined,
   LoginOutlined,
 } from "@ant-design/icons";
-import Logo from "../../../assets/logo/logo3.png";
+import Logo from "../../../assets/logo/logo.png";
 import {
   getCartListAction,
   getCategoryListAction,

@@ -132,7 +132,7 @@ function ProfilePage() {
             tab={
               <span>
                 <UserOutlined />
-                Account information
+                Thông tin tài khoản
               </span>
             }
             key="1"
@@ -312,7 +312,7 @@ function ProfilePage() {
                     className="my-1"
                     size="large"
                   >
-                    Save Change
+                    Lưu thay đổi
                   </Button>
                 </Form.Item>
               </Row>
@@ -322,12 +322,12 @@ function ProfilePage() {
             tab={
               <span>
                 <SolutionOutlined />
-                Order management
+                Quản lý đơn hàng
               </span>
             }
             key="3"
           >
-            <p className="title">My order</p>
+            <p className="title">Đơn hàng của tôi</p>
             <Table
               dataSource={dataSource}
               loading={orderList.load}
@@ -360,11 +360,11 @@ function ProfilePage() {
                               </p>
                             </Col>
                             <Col span={4}>
-                              <p>Amount: {item.amount}</p>
+                              <p>Số lượng: {item.amount}</p>
                             </Col>
                             <Col span={4}>
                               <p>
-                                Price: $
+                                Giá: $
                                 {(item.price +
                                   (item.size.price ? item.size.price : 0) +
                                   (item.color.price ? item.color.price : 0)) *
