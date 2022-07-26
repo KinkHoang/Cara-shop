@@ -36,7 +36,7 @@ function SidebarAdmin() {
                 history.push(PATH.HOMEADMIN);
               }}
             >
-              Thống Kê
+              Trang Chủ
             </Menu.Item>
             <Menu.Item
               key="2"
@@ -63,7 +63,7 @@ function SidebarAdmin() {
                 history.push(PATH.USERADMIN);
               }}
             >
-              Quản Lý User
+              Quản Lý Khách Hàng
             </Menu.Item>
             <Menu.Item
               key="7"

@@ -2,6 +2,7 @@ import { Form, Input, Button, Checkbox, Row, Col } from "antd";
 import { Link } from "react-router-dom";
 import { REGEX } from "../../../constants/validate";
 import TitlePage from "../../../components/User/TitlePage";
+import history from "../../../utils/history";
 import { loginAction } from "../../../redux/actions";
 import "./styles.scss";
 import { useDispatch } from "react-redux";
@@ -15,7 +16,7 @@ function LoginPage() {
 
   return (
     <main className="login container-1">
-      <TitlePage title="Login Page" />
+      <TitlePage title="Đăng Nhập" />
       <Row justify="center">
         <Col span={12}>
           <Form
@@ -65,7 +66,7 @@ function LoginPage() {
                 <Checkbox>Nhớ tài khoản</Checkbox>
               </Form.Item>
 
-              <Link className="login-form-forgot" to="">
+              <Link className="login-form-forgot" onClick={() => history.push("/register")}>
                 Quên mật khẩu
               </Link>
             </Form.Item>

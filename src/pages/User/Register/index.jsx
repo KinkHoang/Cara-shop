@@ -18,7 +18,7 @@ function RegisterPage() {
 
   return (
     <main className="register container-1">
-      <TitlePage title="Register Page" />
+      <TitlePage title="Đăng Ký" />
       <Row justify="center">
         <Col span={12}>
           <Form

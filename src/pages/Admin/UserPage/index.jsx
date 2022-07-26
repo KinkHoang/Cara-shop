@@ -145,7 +145,7 @@ function UserPage() {
           </Form.Item>
         </Form>
       </Modal>
-      <p className="user-page__title">Quản lý User</p>
+      <p className="user-page__title">Quản lý Khách Hàng</p>
       <div className="user-page__main">
         <Row justify="space-between" className="user-page__main--top">
           <div></div>

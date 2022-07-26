@@ -13,56 +13,56 @@ const Footer = () => {
         
     <div className="col">
         <img className="logo" src={Logo1} alt="" onClick={() => history.push("/")}/>
-        <h4 className="bold">Contact</h4>
+        <h4 className="bold">Liên Hệ</h4>
         <p>
-            <strong>Address: </strong> 12 Distric, Hochiminh City
+            <strong>Địa chỉ: </strong> Hai Chau Distric, Da Nang City
         </p>
         <p>
-            <strong>Phone:</strong> +84 359797197 / (+84)393836817
+            <strong>Điện thoại:</strong> +84 356990500
         </p>
         <p>
-            <strong>Hours:</strong> 10:00 - 18:00. Mon - Sat
+            <strong>Giờ làm việc:</strong> 8:00 - 18:00. Mon - Sat
         </p>
         <div className="follow">
-            <h4 className="bold">Follow us</h4>
+            <h4 className="bold">Mạng xã hội</h4>
             <div className="icon">
-                <i ><a className="fab fa-facebook-f" href ="https://www.facebook.com/CarafurnitureShop/"></a></i>
-                <i ><a className="fab fa-twitter"href ="https://www.twitter.com/"></a></i>
-                <i ><a className="fab fa-instagram" href ="https://www.instagram.com/"></a></i>
-                <i ><a className="fab fa-pinterest-p" href ="https://pinterest.com/"></a></i>
-                <i ><a className="fab fa-youtube" href ="https://www.youtube.com/"></a></i>
+                <i ><a target="_blank" className="fab fa-facebook-f"  href ="https://www.facebook.com/CarafurnitureShop/"></a></i>
+                <i ><a target="_blank" className="fab fa-twitter"href ="https://www.twitter.com/"></a></i>
+                <i ><a target="_blank" className="fab fa-instagram" href ="https://www.instagram.com/"></a></i>
+                <i ><a target="_blank" className="fab fa-pinterest-p" href ="https://pinterest.com/"></a></i>
+                <i ><a target="_blank" className="fab fa-youtube" href ="https://www.youtube.com/"></a></i>
             </div>
         </div>
     </div>
     <div className="col">
-        <h4 className="bold">About</h4>
-        <a href="#">About</a>
-        <a href="#">Delivery Infomation</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Term & Conditions</a>
-        <a href="#">Contact us</a>
+        <h4 className="bold">Về chúng tôi</h4>
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Thông tin giao hàng</a>
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản & Điều kiện</a>
+        <a href="#">Liên hệ</a>
     </div>
 
     <div className="col">
-        <h4 className="bold">My account</h4>
-        <a href="#">Sign in</a>
-        <a href="#">View cart</a>
-        <a href="#">My Wishlist</a>
-        <a href="#">Track My Order</a>
-        <a href="#">Help</a>
+        <h4 className="bold">Tài khoản của tôi</h4>
+        <a href="#" onClick={() => history.push("/login")}>Đăng Nhập</a>
+        <a href="#" onClick={() => history.push("/cart")}>Giỏ hàng</a>
+        <a href="#">Danh sách yêu thích</a>
+        <a href="#">Đơn hàng của bạn</a>
+        <a href="#">Giúp đỡ</a>
     </div>
     <div className="col install">
-        <h4 className="bold">Install App</h4>
-        <p>From App Store or Google Play</p>
+        <h4 className="bold">Cài đặt App</h4>
+        <p>Từ App Store hoặc Google Play</p>
         <div className="row">
             <img src={Logo2} alt="" />
             <img src={Logo3} alt="" />
         </div>
-        <p>Secured Payment Gateways</p>
+        <p>Cổng thanh toán</p>
         <img src={Logo4} alt="" />
     </div>
     <div className="copyright">
-        <p>@2022, TungDev - Ecommerce Template</p>
+        <p>@2022, Viet Hoang - Ecommerce project</p>
     </div>
 </footer>
   )

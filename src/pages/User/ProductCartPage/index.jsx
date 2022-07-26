@@ -47,7 +47,7 @@ function ProductCartPage() {
 
   return (
     <main className="container-1 cart-page">
-      <TitlePage title="Cart Page" />
+      <TitlePage title="Giỏ Hàng" />
       <section className="cart-page__main">
         <div className="main__content">
           {cartList.totalCartList < 1 ? (
@@ -80,8 +80,8 @@ function ProductCartPage() {
               }}
             >
               {cartList.totalCartList < 1
-                ? "Cart is empty, go to home"
-                : "Make a payment"}
+                ? "Giỏ hàng trống, về Trang Chủ"
+                : "Thanh Toán"}
             </Button>
           </Row>
         </div>

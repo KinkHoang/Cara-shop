@@ -5,6 +5,9 @@
 	height: 60vh;
 	width: 100%;
 	position: relative;
+	background-size:cover;
+    padding-top:1%;
+    padding-bottom:1%;
 }
 
 .parallax-image::before {

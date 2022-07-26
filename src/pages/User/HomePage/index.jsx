@@ -1,4 +1,5 @@
 import { Tabs, Row, Col, Spin } from "antd";
+import Newsletter from "../../../components/User/Newsletter/";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -43,7 +44,7 @@ function HomePage() {
       <BannerSilder />
       <section className="home__product">
         <Tabs defaultActiveKey="2" centered>
-          <TabPane  key="1">
+          <TabPane tab="Sản Phẩm Giá Tốt" key="1">
             <Row gutter={16}>{renderProductList()}</Row>
           </TabPane>
 
@@ -70,8 +71,9 @@ function HomePage() {
 			</section>
       
 		</header>
-
+    <Newsletter />
     </main>
+     
   );
 }
 
