@@ -161,7 +161,7 @@ function ProductOrderPage() {
 
   return (
     <main className="container-1 order-page">
-      <TitlePage title="Checkout Page" />
+      <TitlePage title="Thanh Toán" />
       <Row gutter={16}>
         <Col span={14}>
           <Form
@@ -245,7 +245,7 @@ function ProductOrderPage() {
             <Form.Item>
               <Row justify="center">
                 <Button type="primary" htmlType="submit" size="large">
-                  Nơi đặt hàng
+                  Đặt hàng
                 </Button>
               </Row>
             </Form.Item>

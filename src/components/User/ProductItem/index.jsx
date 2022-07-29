@@ -35,7 +35,7 @@ function ProductItem(props) {
         <h3 className="product-item__content--name">{name}</h3>
         <Row>
           <Rate disabled defaultValue={rate} />
-          <span className="product-item__comment">0 Bình luận</span>
+      
         </Row>
         <p className="product-item__content--price">{`$${price}`}</p>
       </div>

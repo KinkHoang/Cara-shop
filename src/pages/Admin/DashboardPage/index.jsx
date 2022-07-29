@@ -60,7 +60,7 @@ function DashboardPage() {
 
   return (
     <main className="dashboard-page">
-      <p className="dashboard-page__title">Trang Chủ</p>
+      <p className="dashboard-page__title">Thống Kê</p>
       <Row gutter={16}>
         <Col span={14} className="dashboard-page__chart">
           <Line
