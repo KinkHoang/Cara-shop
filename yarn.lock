@@ -12359,13 +12359,6 @@ react-messenger-customer-chat@^0.8.0:
   dependencies:
     prop-types "^15.6.0"
 
-react-pagination-list@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/react-pagination-list/-/react-pagination-list-1.0.8.tgz#e5230889da4b38b1f3c9dcac0db0db7642a1a261"
-  integrity sha512-78OqHV13HzXT+sQd8BPohdwsTVZ5rxXDSdFx93gJJeNy62eVWdVYPg9u7okAsPXxVd4asJA//7zZQCp4nwHl0A==
-  dependencies:
-    node-sass "^4.13.0"
-
 react-redux@^7.2.5:
   version "7.2.8"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.8.tgz#a894068315e65de5b1b68899f9c6ee0923dd28de"

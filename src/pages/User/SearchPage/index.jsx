@@ -24,8 +24,8 @@ function SearchPage() {
 
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getProductListAction({ ...searchParsed, ...params }));  }, );
-  // }, [location, params]);
+    dispatch(getProductListAction({ ...searchParsed, ...params })); 
+  }, [location, params]);
 
   function renderProductList() {
     if (!productList.load) {
